@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="60.479878">
+    <testcase classname="To validate the account creation of fb application" name="To creat new account" time="60.479878">
+        <failure message="java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)&#13;&#10;&#9;at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)&#13;&#10;&#9;at org.base.BaseClass.passText(BaseClass.java:56)&#13;&#10;&#9;at org.stepdefinition.FbRegistration.to_pass_mobileno_or_email_in_email_text_box(FbRegistration.java:58)&#13;&#10;&#9;at ✽.To pass mobileno or email in email text box(src/test/resources/FbRegistration.feature:17)&#13;&#10;"><![CDATA[Given To launch the browser and maximize the window.........................passed
+When To launch url of fb application........................................passed
+And To click the creat new account button...................................passed
+And To  pass firstname in firstname text box................................passed
+And To pass secondname in secondname text box...............................passed
+And To pass mobileno or email in email text box.............................failed
+And To creat new password using new password test box.......................skipped
+Then T close the chrome browser.............................................skipped
+
+StackTrace:
+java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
+	at org.base.BaseClass.passText(BaseClass.java:56)
+	at org.stepdefinition.FbRegistration.to_pass_mobileno_or_email_in_email_text_box(FbRegistration.java:58)
+	at ✽.To pass mobileno or email in email text box(src/test/resources/FbRegistration.feature:17)
+]]></failure>
+    </testcase>
+</testsuite>
